@@ -1,0 +1,9 @@
+blu-2048
+
+*.pro.user*
+
+Makefile*
+/.qmake.cache
+/.qmake.stash
+qrc_*.cpp
+*.o

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>2048.js</file>
+        <file>icon.png</file>
+        <file>Tile.qml</file>
+        <file>MyMessageDialog.qml</file>
+        <file>MyButton.qml</file>
+        <file>FirstLoad.qml</file>
+    </qresource>
+</RCC>
