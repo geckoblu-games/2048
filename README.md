@@ -20,4 +20,4 @@ I started this project learning from:
 * [How to make 2048 with Felgo](https://felgo.com/doc/how-to-make-2048-tutorial/)
 
 ## License
-2048-qml is licensed under the [GPL v3.0](http://www.gnu.org/licenses/gpl-3.0.en.html) or later.
+2048 is licensed under the [GPL v3.0](http://www.gnu.org/licenses/gpl-3.0.en.html) or later.

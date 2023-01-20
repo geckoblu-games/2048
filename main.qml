@@ -58,7 +58,7 @@ Window {
         anchors.centerIn: parent
 
         focus: true
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             Model.moveKey(event.key);
             switch (event.key) {
             case Qt.Key_Left:
@@ -220,16 +220,16 @@ Window {
                         if (Math.abs(deltax) > 40 || Math.abs(deltay) > 40) {
                             moving = true
 
-                            if (deltax > 30 && Math.abs(deltay) < 30 && moveRelease.running === false) {
+                            if (deltax > 30 && Math.abs(deltay) < 30 && !moveRelease.running) {
                                 Model.moveKey(Qt.Key_Right);
                             }
-                            else if (deltax < -30 && Math.abs(deltay) < 30 && moveRelease.running === false) {
+                            else if (deltax < -30 && Math.abs(deltay) < 30 && !moveRelease.runninge) {
                                 Model.moveKey(Qt.Key_Left);
                             }
-                            else if (Math.abs(deltax) < 30 && deltay > 30 && moveRelease.running === false) {
+                            else if (Math.abs(deltax) < 30 && deltay > 30 && !moveRelease.running) {
                                 Model.moveKey(Qt.Key_Down);
                             }
-                            else if (Math.abs(deltax) < 30 && deltay < 30 && moveRelease.running === false) {
+                            else if (Math.abs(deltax) < 30 && deltay < 30 && !moveRelease.running) {
                                 Model.moveKey(Qt.Key_Up);
                             }
                         }
