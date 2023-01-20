@@ -1,4 +1,4 @@
-# 2048-qml
+# 2048
 Yet another clone of [2048](https://github.com/gabrielecirulli/2048), implemented in QML.
 
 ## Screenshot
@@ -7,9 +7,9 @@ Yet another clone of [2048](https://github.com/gabrielecirulli/2048), implemente
 
 
 ## Build
-The Qt libraries (version >= 6.0) are required. Make sure that they are installed on your system.
+The Qt libraries (version >= 6.4) are required. Make sure that they are installed on your system.
 
-    qmake -o Makefile 2048-qml.pro
+    qmake -o Makefile 2048.pro
     make
     
 ## References
