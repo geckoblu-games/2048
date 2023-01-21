@@ -11,6 +11,7 @@ The Qt libraries (version >= 6.4) are required. Make sure that they are installe
 
     qmake -o Makefile 2048.pro
     make
+    sudo make install
     
 ## References
 I started this project learning from:
