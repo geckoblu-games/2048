@@ -59,15 +59,15 @@ Window {
 
         focus: true
         Keys.onPressed: (event) => {
-            Model.moveKey(event.key);
-            switch (event.key) {
-            case Qt.Key_Left:
-            case Qt.Key_Right:
-            case Qt.Key_Up:
-            case Qt.Key_Down:
-                event.accepted = true;
-            }
-        }
+                            Model.moveKey(event.key);
+                            switch (event.key) {
+                                case Qt.Key_Left:
+                                case Qt.Key_Right:
+                                case Qt.Key_Up:
+                                case Qt.Key_Down:
+                                event.accepted = true;
+                            }
+                        }
 
         Item {
             id: subScene
@@ -261,6 +261,11 @@ Window {
                             color: myColors.bggray
                         }
                     }
+                }
+
+                Item {
+                    id: tileArea
+                    anchors.fill: tileGrid
                 }
             }
 
