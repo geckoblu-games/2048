@@ -413,7 +413,7 @@ function createTileObject(ind, n, isStartup) {
     var tileText =  Math.pow(2, n).toString();
     var sty = computeTileStyle(n, tileText);
 
-    tile = tileComponent.createObject(tileGrid, {"x": cells.itemAt(ind).x, "y": cells.itemAt(ind).y, "color": sty.bgColor, "tileColor": sty.fgColor, "tileFontSize": sty.fontSize, "tileText": tileText});
+    tile = tileComponent.createObject(tileArea, {"x": cells.itemAt(ind).x, "y": cells.itemAt(ind).y, "color": sty.bgColor, "tileColor": sty.fgColor, "tileFontSize": sty.fontSize, "tileText": tileText});
     if (! isStartup) {
         tile.runNewTileAnim = true;
     }
